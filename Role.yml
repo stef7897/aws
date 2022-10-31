@@ -3,7 +3,7 @@ Resources:
   RootRole:
     Type: 'AWS::IAM::Role'
     Properties:
-      RoleName: ec2role2
+      RoleName: ec2role
       AssumeRolePolicyDocument:
         Version: "2012-10-17"
         Statement:
@@ -29,3 +29,7 @@ Outputs:
     Value: !Ref RootRole
     Export: 
       Name: Rolename
+  roleARN:
+    Value: !Ref RootRole.Arn
+    Export: 
+      Name: RolenameARN

@@ -19,4 +19,5 @@ Resources:
               - - 'arn:aws:s3:::'
                 - !Ref S3Bucket
                 - /*
-            Principal: Fn::ImportValue: RolenameARN
+            Principal:
+              Fn::ImportValue: RolenameARN

@@ -10,5 +10,5 @@ Resources:
             Action:
               - 's3:*'
             Resource: '*'
-      Groups:
+      Roles:
         - Fn::ImportValue: Rolename

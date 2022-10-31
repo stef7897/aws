@@ -19,3 +19,13 @@ Resources:
       Path: /
       Roles:
         - !Ref RootRole
+
+Outputs:
+  instanceprofile:
+    Value: !Ref RootInstanceProfile
+    Export: 
+      Name: Instanceprofile
+  role:
+    Value: !Ref RootRole
+    Export: 
+      Name: Rolename

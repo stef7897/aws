@@ -11,4 +11,21 @@ Resources:
     Properties:
       GroupDescription: test 2
       VpcId: vpc-03007d3b091b7a3a2 
-      
+   
+Outputs:
+  instanceprofile:
+    Value: !Ref test 1
+    Export: 
+      Name: SG1
+  role:
+    Value: !Ref testsecuritygroup1
+    Export: 
+      Name: SG1-2 
+  instanceprofile:
+    Value: !Ref test 2
+    Export: 
+      Name: SG2
+  role:
+    Value: !Ref testsecuritygroup2
+    Export: 
+      Name: SG2-2 

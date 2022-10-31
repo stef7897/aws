@@ -7,6 +7,6 @@ Resources:
       ImageId: ami-09d3b3274b6c5d4aa
       KeyName: ec2key
       SecurityGroupIds:
-        - sg-088f81b0e44645a05
-        - sg-0e0327f7733f00a56
+        - Fn:ImportValue: SG1
+        - Fn:ImportValue: SG2
       SubnetId: subnet-0db61a20970a88ded

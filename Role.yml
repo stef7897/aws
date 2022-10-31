@@ -30,6 +30,6 @@ Outputs:
     Export: 
       Name: Rolename
   roleARN:
-    Value: !Ref RootRole.Arn
+    Value: !GetAtt RootRole.Arn
     Export: 
       Name: RolenameARN

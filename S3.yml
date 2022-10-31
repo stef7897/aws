@@ -20,4 +20,4 @@ Resources:
                 - !Ref S3Bucket
                 - /*
             Principal:
-              Fn::ImportValue: RolenameARN
+              AWS: Fn::ImportValue: RolenameARN

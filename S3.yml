@@ -3,4 +3,4 @@ Resources:
     Type: 'AWS::S3::Bucket'
     DeletionPolicy: Retain
     Properties:
-      BucketName: Bucket-rod-test-1
+      BucketName: bucket-rod-test-1

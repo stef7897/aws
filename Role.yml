@@ -3,7 +3,7 @@ Resources:
   RootRole:
     Type: 'AWS::IAM::Role'
     Properties:
-      RoleName: ec2role
+      RoleName: ec2role2
       AssumeRolePolicyDocument:
         Version: "2012-10-17"
         Statement:

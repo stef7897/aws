@@ -14,9 +14,9 @@ Parameters:
     Type: String  
 Resources:
   WebInstance:
-  InstanceType: t2.micro
     Type: AWS::EC2::Instance
     Properties:
+      InstanceType: t2.micro
       ImageId: !Ref ImageId
       KeyName: !Ref myKeyPair
       SecurityGroupIds:

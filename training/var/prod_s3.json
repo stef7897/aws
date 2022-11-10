@@ -1,5 +1,5 @@
 {
 "Parameters": {
-  "s3bucketname": "Prod_stefan_test_S3Bucket"
+  "s3bucketname": "Prod_stefan_test_s3Bucket"
 }
 }

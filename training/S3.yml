@@ -26,6 +26,5 @@ Parameters:
             Principal:
               AWS: 
                 Fn::ImportValue: RolenameARN
-                ags: 
         - Key: "Name"
           Value: !Ref S3Bucket

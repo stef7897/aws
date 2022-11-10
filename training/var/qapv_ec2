@@ -1,0 +1,8 @@
+{
+"Parameters": {
+  "myKeyPair": "ec2key",
+  "mySubnetID1": "subnet-0db61a20970a88ded",
+  "ImageId": "ami-09d3b3274b6c5d4aa",
+  "EC2Name": "qapv_ec2"
+}
+}

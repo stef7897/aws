@@ -6,9 +6,6 @@ Parameters:
   mySubnetID1: 
     Description: Subnet IDs
     Type: String
-  mySubnetID2: 
-    Description: Subnet IDs
-    Type: String
   ImageId:
     Description: Image ID
     Type: String

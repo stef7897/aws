@@ -1,13 +1,13 @@
+Parameters: 
+  s3bucketname: 
+    Description: name of s3bucket
+    Type: String
 Resources:
   S3Bucket:
     Type: 'AWS::S3::Bucket'
     DeletionPolicy: Retain
     Properties:
-      BucketName: bucket-rod-test-1
-Parameters: 
-  S3Bucket:
-    Description: S3Bucket Name
-    Type: String    
+      BucketName: !Ref s3bucketname
   SampleBucketPolicy:
     Type: AWS::S3::BucketPolicy
     Properties:
@@ -25,7 +25,4 @@ Parameters:
                 - /*
             Principal:
               AWS: 
-                Fn::ImportValue: RolenameARN]
-      Tags: 
-        - Key: "Name"
-          Value: !Ref S3Bucketname
+                Fn::ImportValue: RolenameARN

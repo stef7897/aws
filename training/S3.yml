@@ -6,7 +6,7 @@ Resources:
       BucketName: bucket-rod-test-1
 Parameters: 
   S3Bucket:
-    Description: Ec2 Name
+    Description: S3Bucket Name
     Type: String    
   SampleBucketPolicy:
     Type: AWS::S3::BucketPolicy
@@ -26,3 +26,6 @@ Parameters:
             Principal:
               AWS: 
                 Fn::ImportValue: RolenameARN
+                ags: 
+        - Key: "Name"
+          Value: !Ref S3Bucket

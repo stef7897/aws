@@ -25,6 +25,7 @@ Parameters:
                 - /*
             Principal:
               AWS: 
-                Fn::ImportValue: RolenameARN
+                Fn::ImportValue: RolenameARN]
+      Tags: 
         - Key: "Name"
-          Value: !Ref S3Bucket
+          Value: !Ref S3Bucketname
